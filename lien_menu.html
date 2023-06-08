@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ma page structure</title>
     <!--Titre du site apparaissant  par exemple sur une recherche google-->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/liens_menus.css" />
     <!--Reliez le fichier html au fichier CSS(Cascading Style Sheets)-->
     <link
       href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald"
@@ -48,14 +48,14 @@
       <!--Zone du menu, les liens pour naviguer sur le site-->
       <div class="ancreNav">
         <ul>
-          <li><a href="index.html" >Structure</a></li>
+          <li><a href="index.html">Structure</a></li>
           <li><a href="texte.html">Texte</a></li>
-          <li><a href="selecteur.html" >Selecteur</a></li>
-          <li><a href="image.html" >Image</a></li>
+          <li><a href="selecteur.html">Selecteur</a></li>
+          <li><a href="image.html">Image</a></li>
           <li><a href="position.html">Position</a></li>
           <li><a href="zoning.html">Zoning</a></li>
           <li><a href="tableau.html">Tableau</a></li>
-          <li><a href="liste.html" >Liste</a></li>
+          <li><a href="liste.html">Liste</a></li>
           <li><a href="lien_menu.html" class="activ">Lien & menu</a></li>
           <li><a href="formulaire.html">Formulaire</a></li>
           <li><a href="multimedia.html">Multimedia</a></li>
@@ -65,24 +65,64 @@
     </nav>
 
     <main>
-      <!--Contenu principal-->
-      <aside>
-        <!--Contenu secondaire-->
-      </aside>
-
       <section>
-        <!--Zone de contenu : titre, texte, regroupement thématique-->
-        <div>
-          <!--Zone supplémentaire de contenu-->
+        <h2>Liens & Menus</h2>
+        <nav class="none">
+          <ul class="lien1">
+            <li><a href="#lien" class="none">Les Liens</a></li>
+            <li><a href="#menu" class="none">Les Menus</a></li>
+            <li>
+              <a href="#menuDeroulant" class="none">Les menus déroulants</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="links">
+          <h3>Les Liens</h3>
+          <p>
+            <a href="https://codepen.io/" target="_blank">
+              CodePen is a social development environment for front-end
+              designers and developers
+            </a>
+          </p>
+          <p><a href="127.0.0.1:5500/files/cv.doc"> télécharger mon CV </a></p>
+          <p><a href="127.0.0.1:5500/files/cv.pdf"> voir mon CV </a></p>
+          <p><a href="onClick()">Imprimer la page</a></p>
+          <p>
+            cliquez <a href="#index.html">ici</a> pour vous rendre à l'accueil
+          </p>
         </div>
-
-        <span>
-          <!--Zone supplémentaire de contenu-->
-        </span>
-
-        <article>
-          <!--Zone supplémentaire de contenu-->
-        </article>
+        <div>
+          <h3>Les menus</h3>
+          <nav class="none">
+            <ul class="grey">
+              <li><a href="index.html" class="none">Accueil</a></li>
+              <li><a href="#parcours" class="none">Parcours</a></li>
+              <li><a href="#competences" class="none">Compétences</a></li>
+              <li><a href="#realisation" class="none">Réalisation</a></li>
+              <li><a href="#contact" class="none">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h3>Les menus</h3>
+          <nav class="none">
+            <ul class="black_blue">
+              <li><a href="#structure" class="none">Accueil</a></li>
+              <li class="sous_menu">
+                <a href="#parcours" class="none">Formation</a>
+                <ul class="niveau2">
+                  <li><a href="">Etudiant</a></li>
+                  <li><a href="">Emploi du temps</a></li>
+                  <li><a href=""></a>Recherche d'emploi</li>
+                  <li><a href=""></a>Documents</li>
+                </ul>
+              </li>
+              <li><a href="#competences" class="none">Informations</a></li>
+              <li><a href="#realisation" class="none">Cours</a></li>
+              <li><a href="#contact" class="none">Mon CV</a></li>
+            </ul>
+          </nav>
+        </div>
       </section>
     </main>
 
